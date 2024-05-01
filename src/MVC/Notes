@@ -1,0 +1,19 @@
+The Model-View-Controller (MVC) design pattern in Java.
+Let's break down what each part does:
+
+StudentController: This class serves as the controller in the MVC pattern. It acts as an intermediary between the
+model (Student) and the view (StudentView). Its primary responsibility is to handle user input, update the model
+accordingly, and then update the view to reflect those changes.
+
+Student model: This represents the data or state of the application. In this case, it's a Student object containing
+attributes like name and roll number.
+
+StudentView: This is responsible for rendering the user interface based on the state of the model.
+
+Now, focusing on the methods within the StudentController class:
+setStudentName(String name): This method sets the name of the student in the model.
+getStudentName(): This method retrieves the name of the student from the model.
+setStudentRollNo(String rollNo): This method sets the roll number of the student in the model.
+getStudentRollNo(): This method retrieves the roll number of the student from the model.
+updateView(): This method updates the view with the current state of the model. It calls the printStudentDetails method
+of the view, passing the name and roll number of the student.
